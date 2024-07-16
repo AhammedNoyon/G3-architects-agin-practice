@@ -6,3 +6,193 @@
     font-weight: 400;
     font-style: normal;
 }
+
+/* shared related style */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.dark1-primary{
+    color: #131313;
+}
+.dark3-secondary{
+    color: #727272;
+}
+.btn-primary{
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: white;
+    background-color: rgba(255, 144, 14, 1);
+    padding: 20px 25px;
+    border-radius: 8px;
+    border: none;
+    /* justify-content: center;
+    align-items: center;
+    text-align: center; */
+}
+.navbar,.banner{
+    max-width: 1440px;
+    margin: 0 auto;
+}
+main > section{
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+
+    /* header related style */
+    .header{
+        max-width: 1920px;
+        margin: 0 auto;
+        background-color: rgba(255, 144, 14, 0.1);
+    }
+
+    /* navbar related style */
+
+    .navbar{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .nav-link ul{
+        display: flex;
+        gap: 30px;
+    }
+    .nav-item{
+        list-style: none;
+        font-size: 1.2rem;
+        font-weight: 500;
+        color: #424242;
+
+    }
+    .nav-item a{
+        text-decoration: none;
+        font-size: 1.2rem;
+        font-weight: 500;
+        color: #424242;
+    }
+    .navbar-title{
+        font-size: 2.8rem;
+        font-weight: 800;
+    }
+
+        /* brand related style */
+        .brand-container{
+            max-width: 862px;
+            margin: 0 auto;
+            align-items: center;
+            text-align: center;
+        }
+        .brand-title{
+            font-size: 4rem;
+            font-weight: 800;
+            margin-top: 110px;
+        }
+        .brand-description{
+            font-size: 1rem;
+            font-weight: 400;
+            margin: 32px;
+        }
+            /* banner related style */
+            .banner img{
+                width: 100%;
+                margin: 48px 0;
+            }
+
+            /* list related style */
+            .listing{
+                display: flex;
+                align-items: center;
+                margin-top: 85px;
+                gap: 73px;
+            }
+            .list-image{
+                display: grid;
+                grid-template-columns: repeat(2,1fr);
+                gap: 24px;
+            }
+
+            /* list details related style */
+            .list-details{
+                max-width: 537px;
+                margin: 0 auto;
+                border-radius: 8px;
+            }
+            .list-title{
+                font-size: 2.8rem;
+                font-weight: 800;
+            }
+            .span1{
+                font-weight: 500;
+            }
+            .span2{
+                color: rgba(255, 144, 14, 1);
+            }
+            .list-description{
+                font-size: 1rem;
+                font-weight: 400;
+                margin: 28px 0;
+            }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        /* responsive related style */
+        @media screen and (max-width:576px) {
+            .navbar,
+            .nav-link ul,
+            .listing{
+                flex-direction: column;
+            }
+
+            .list-image{
+                grid-template-columns: repeat(1,1fr);
+            }
+
+
+            .nav-link ul{
+                margin-top: 20px;
+            }
+            .brand-title{
+                font-size: 3rem;
+                
+            }
+            .list-title{
+                text-align: center;
+                font-size: 2rem;
+            }
+            .list-description{
+                text-align: center;
+                font-size: 0.6rem;
+            }
+            #button-2{
+                margin-left: 80px;
+            }
+
+        }
+
+
+        @media screen and (min-width:577px) and (max-width:992px) {
+            .listing{
+                flex-direction: column;
+            }
+            .list-details{
+                text-align: center;
+            }
+        }
