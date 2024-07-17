@@ -196,7 +196,89 @@ main > section{
                     color: white;
                 }
 
+                    /* fact related style  */
+                    .some-fact{
+                        margin-top: 130px;
+                    }
+                    .fact-title{
+                        font-size: 2.8rem;
+                        font-weight: 800;
+                    }
+                    .fact-description{
+                        font-size: 1rem;
+                        font-weight: 400;
+                        margin-top: 24px;
+                    }
+                    .fact-card-container{
+                        /* margin:100px 0; */
+                        display: grid;
+                        grid-template-columns: repeat(4,1fr);
+                        /* margin: 124px; */
+                        gap: 124px;
 
+                    }
+                    .fact-card{
+                        width: 241px;
+                        height: 241px;
+                        border: 1px solid rgba(255, 144, 14, 1);
+                        border-radius: 8px;
+                        text-align: center;
+                        /* align-items: center; */
+                        padding: 50px 0;
+                        margin-top: 100px;
+                    }
+                    .card-number{
+                        font-size: 2.8rem;
+                        font-weight: 600;
+                        color: #424242;
+                        margin: 8px 0;
+                    }
+                    .card-description{
+                        font-size: 1.25rem;
+                        font-weight: 600;
+                        color: #727272;
+                    }
+                        /* sponsor related style */
+                        .sponsor{
+                            margin-top: 180px;
+                        }
+                        .sponsor-details{
+                            max-width: 542px;
+                            margin: 0 auto;
+                        }
+                        .sponsor-title{
+                            font-size: 2.8rem;
+                            font-weight: 800;
+                        }
+                        .sponsor-description{
+                            font-size: 1rem;
+                            font-weight: 400;
+                            margin-top: 24px;
+                        }
+
+                        .sponsor-company{
+                            margin-top: 30px;
+                        }
+                        .company-logo{
+                            margin: 50px;
+                        }
+                    
+                        /* footer related style */
+                        .footer-section{
+                            margin: 169px auto;
+                        }
+                        .footer-container{
+                            max-width: 1440px;
+                            border-radius: 8px;
+                            background-color: rgba(255, 244, 231, 1);
+                            padding: 39px 0;
+                            margin: 0 auto;
+                        }
+                        .footer-description {
+                            font-size: 1.25rem;
+                            font-weight: 400;
+                            text-align: center;
+                        }
 
 
 
@@ -219,6 +301,13 @@ main > section{
             .listing,
             .love-feature{
                 flex-direction: column;
+            }
+            .love-feature{
+                flex-direction: column-reverse;
+                margin-top: 30px;
+            }
+            .fact-card-container{
+                grid-template-columns: repeat(1,1fr);
             }
 
             .list-image{
@@ -250,7 +339,10 @@ main > section{
                 font-size: 1.rem;
                 margin-top: 10px;
                 text-align: center;
+                border-left: none;
+                padding-left: 0;
             }
+            
             .feature-description{
                 font-size: 1rem;
                 text-align: center;
@@ -263,7 +355,7 @@ main > section{
             }
             .btn-second{
                 margin-top: 10px;
-                margin-left: 70px;
+                margin-left: 90px;
                 width: 50%;
                 height: 50%;
                 padding: 20px 10px;
@@ -271,6 +363,55 @@ main > section{
             #bnt-span1{
                 font-size: 2rem;
             }
+                /* fact related responsive */
+            .some-fact{
+                    margin-top: 50px;
+            }
+            .fact-card-container{
+                    gap: 0;
+                    margin: 10px 50px;
+            }
+            .fact-card{
+                width: 200px;
+                height: 200px;
+                padding: 30px 0;
+                /* margin-top: 20px;
+                margin-left: 70px; */
+            }
+            .fact-title{
+                font-size: 2rem;
+                font-weight: 800;
+                text-align: center;
+            }
+            .fact-description{
+                text-align: center;
+            }
+            .fact-card ,
+            .card-image{
+                margin-left: 60px;
+            }
+            /* sponsor related responsive */
+            .sponsor{
+                margin-top: 50px;
+            }
+            .sponsor-title{
+                font-size: 2rem;
+                text-align: center;
+            }
+            .sponsor-description{
+                font-size: 1rem;
+                text-align: center;
+            }
+            .sponsor-company,
+            .company-logo {
+                text-align: center;
+                margin: 30px;
+            }
+                /* footer related style */
+            .footer-section{
+                margin: 50px auto;
+            }
+
 
         }
 
@@ -279,6 +420,29 @@ main > section{
             .listing,
             .love-feature{
                 flex-direction: column;
+            }
+            .fact-card-container{
+                grid-template-columns: repeat(2,1fr);
+            }
+            .fact-card-container{
+                gap: 0;
+        }
+        .fact-card{
+            width: 200px;
+            height: 200px;
+            padding: 30px 0;
+            margin-top: 20px;
+            margin-left: 70px;
+            
+        }
+            .fact-title{
+                font-size: 3rem;
+                font-weight: 800;
+                text-align: center;
+            }
+            .fact-description{
+                font-size: 2rem;
+                text-align: center;
             }
             .list-details{
                 text-align: center;
@@ -308,6 +472,22 @@ main > section{
             }
             #bnt-span1{
                 font-size: 2rem;
+            }
+            .sponsor-title{
+                font-size: 2rem;
+                text-align: center;
+            }
+            .sponsor-description{
+                font-size: 1rem;
+                text-align: center;
+            }
+            .sponsor-company,
+            .company-logo {
+                text-align: center;
+                margin: 30px;
+            }
+            .footer-section{
+                margin: 50px auto;
             }
 
         }
